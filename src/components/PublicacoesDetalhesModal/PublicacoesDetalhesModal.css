@@ -1,0 +1,63 @@
+.PublicacoesDetalhesModal {
+  border: solid 3px #a200ff;
+  border-radius: 3rem;
+  width: 50%;
+  min-width: 400px;
+  margin: 2rem auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.146);
+  padding: 1.2rem;
+}
+
+.PublicacoesDetalhesModal__Header {
+  display: flex;
+  align-items: center;
+}
+
+img.PublicacoesDetalhesModal__foto {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.nomeHora h3 {
+  color: blue;
+  font-size: 22px;
+}
+
+.nomeHora {
+  margin-left: 0.5rem;
+}
+
+.nomeHora h4 {
+  margin-top: -0.4rem;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.389);
+}
+
+.PublicacoesDetalhesModal__Main {
+  align-items: center;
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+}
+
+.PublicacoesDetalhesModal__Footer {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.PublicacoesDetalhesModal__Footer button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.1s;
+}
+
+.PublicacoesDetalhesModal__Footer button:hover {
+  transform: scale(1.1);
+}
+
+.PublicacoesDetalhesModal__Footer button img {
+  width: 20px;
+}

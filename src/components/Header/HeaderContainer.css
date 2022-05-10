@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  width: 100%;
+  background-color: #b638e8;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 3px;
+}
+
+.LogoTitulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Logo {
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+.Pesquisar {
+  display: flex;
+  transition: all ease-in-out 0.2s;
+  justify-content: space-around;
+}
+
+.LupaIcon {
+  max-width: 25px;
+  margin: 5px;
+  transform: scaleX(-1);
+}
+
+.Input {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.262);
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  transform: scaleX(0);
+  transition: all ease-in-out 1s;
+  transform-origin: right;
+  transition: transform 500ms;
+}
+
+.Pesquisar:hover .Input {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+@media (max-width: 486px) {
+  .Header {
+    width: auto;
+    max-width: 486px;
+    min-width: none;
+  }
+
+  .LogoTitulo {
+    min-width: none;
+    width: auto;
+    max-width: 486px;
+  }
+
+  .LogoTitulo h1 {
+    font-size: 30px;
+  }
+
+  .Logo {
+    width: 35px;
+  }
+
+  .Pesquisar {
+    width: 110px;
+    align-items: center;
+  }
+
+  .LupaIcon {
+    width: 25px;
+  }
+
+  .Input {
+    width: 80px;
+    font-size: 10px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .Header {
+    width: auto;
+    max-width: 350px;
+    min-width: none;
+  }
+
+  .LogoTitulo {
+    min-width: none;
+    width: auto;
+    max-width: 350px;
+  }
+
+  .LogoTitulo h1 {
+    font-size: 20px;
+  }
+
+  .Logo {
+    width: 25px;
+  }
+
+  .Pesquisar {
+    width: 100px;
+    align-items: center;
+  }
+
+  .LupaIcon {
+    width: 15px;
+  }
+
+  .Input {
+    width: 70px;
+    font-size: 5.5px;
+  }
+}
+
+.Opcoes {
+  display: flex;
+}
+
+.Publicacao {
+  background: none;
+  border: none;
+  transform: translateY(-3px);
+  border-radius: 10px;
+  transition: all 0.5s;
+  padding: 0;
+}
+
+.Publicacao__icone {
+  cursor: pointer;
+  transform: translateY(3px);
+}
+
+.Publicacao--ativa {
+  background: rgba(148, 0, 211);
+}

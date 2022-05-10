@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Home__Container {
+  position: relative;
+  background-image: linear-gradient(
+    to top right,
+    blue,
+    #b638e8 50%,
+    #4d4d4d54 110%
+  );
+  min-height: calc(100vh);
+  color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 350px) {
+  .Home__Container {
+    justify-content: unset;
+  }
+}
